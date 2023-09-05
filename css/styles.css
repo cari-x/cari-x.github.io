@@ -1,0 +1,605 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;600;700&family=Quicksand:wght@300;400;500&display=swap');
+
+/* Defien una serie de variables de CSS personalizadas */
+:root {
+    --gold1: #f4bd76;
+    --gold2: #f6cd8f;
+    --gray: #ffffff80;
+    --gray2: #f7d9d990;
+    --black1: #dda2dc;
+    --black2: #cea5e7;
+    --celeste:#5fa3b9;
+
+    /* Definicion de sombra con desplazamiento y enfoque */
+
+    /* Arriba, derecha, izquierda y abajo y el ultimo valor siempre hará referencia al difuminado */
+    --shadow: 0 2px 8px;
+    --color_shadow: #0000033;
+
+}
+
+/* Selector Universal */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+}
+
+/* *****************    BANNER     ************************* */
+
+.banner {
+    width: 100%;
+    height: 750px;
+    /* Establece el tamaño de fondo al 100% de ancho y 100% de alto */
+    background-size: 100% 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.banner__main {
+    width: 100%;
+    display: flex;
+}
+
+
+.capa {
+    width: 100%;
+    height: 750px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.info {
+    z-index: 1;
+    width: 100%;
+    /*max-width: 550px;*/
+    text-align: center;
+    margin-left: 100px;
+}
+
+.software__h1 {
+    color: var(--gold2);
+    font-size: 40px;
+}
+
+.name__welcome {
+    color: #fff;
+    font-size: 80px;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+
+.mockup__container {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+
+.mockup__img {
+    width: 750px;
+    display: flex;
+}
+
+.info p {
+    color: #c7c7c7;
+    /* Establece la altura de la línea del interlineado del texto */
+    line-height: 1px;
+    margin-bottom: 30px;
+
+}
+
+.info a {
+    color: #fff;
+    text-decoration: none;
+    background: var(--black2);
+    padding: 16px 37px;
+    /* Establece la visualizacion como bloque en linea */
+    display: inline-block;
+    border-radius: 50px;
+    margin-top: 40px;
+}
+
+/* *****************   FIN BANNER     ************************* */
+
+.keys {
+    color: var(--gold2);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* Esta propiedad se encarga de ocultar los elemntos */
+    overflow: hidden;
+    padding: 100px 0;
+    height: auto;
+}
+
+.container--modifier {
+    width: 60%;
+}
+
+.hero {
+    width: 100%;
+    /* Altura minima del dispositivo */
+    min-height: 100vh;
+    /* Establecer un fondo con un degradado lineal */
+    background: linear-gradient(15deg, var(--celeste) 0%, var(--black1) 100%);
+}
+
+.nav__hero {
+    color: #fff;
+    height: 70px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: var(--black2);
+    position: fixed;
+    z-index: 1;
+    min-height: 10vh;
+    width: 100%;
+    box-shadow: 0 4px 3px rgba(255, 255, 255, 0.1);
+
+}
+
+.nav__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: inherit;
+    padding: 0;
+}
+
+.logo__name {
+    font-size: 24px;
+}
+
+.link {
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+    font-weight: 300;
+    padding: 10px;
+}
+
+.link--active {
+    color: var(--gold2);
+    font-weight: 700;
+}
+
+.point {
+    color: var(--gold2);
+}
+
+.hero__main {
+    height:calc(100vh - 70px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+.mockup {
+    object-fit: cover;
+    width: 50%;
+    min-height: 70vh;
+}
+
+.hero__textos {
+    width: 48%;
+}
+
+.title {
+    text-align: center;
+    font-size: 74px;
+    font-weight: bold;
+    color: white;
+}
+
+.title--active { 
+    color: var(--gold1);
+    font-weight: 700;
+}
+
+.copy {
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+}
+
+.copy__active {
+    font-weight: 700;
+}
+
+.cta {
+    padding: 20px 30px;
+    display: inline-block;
+    background: linear-gradient(180deg, #f7ce90 0%, #f4bd76 100%);
+    text-decoration: none;
+    color: var(--black2);
+    font-weight: 700;
+    border-radius: 30px;
+    margin-top: 10px;
+    margin-left: 200px;
+}
+
+.services{
+    background: #fafafa;
+}
+
+.subtitle{
+    font-size: 42px;
+}
+
+.subtitle--modifier{
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.copy__section{
+    color: var(--black2);
+    font-size: 22px;
+    line-height: 32px;
+    margin-bottom: 60px;
+}
+
+.copy__section--modifier{
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.container-cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 30%;
+    padding: 30px 0;
+    overflow: hidden;
+    background: linear-gradient(180deg, var(--black2) 0%, var(--black1) 100%);
+    border-radius: 10px;
+    position: relative;
+    text-align: right;
+    margin-bottom: 60px;
+    /* Aplica una sombra al elemento utilizando la propiedad box-shadow */
+    box-shadow: 0 0 6px var(--color_shadow);
+}
+/* *****************   SOBRE MI    ************************* */
+
+.cards__abt {
+    display: flex;
+}
+
+.c_abt {
+    border-radius: 20px;
+    margin-left: 10px;
+    height: 200px;
+    background-color:var(--black2);
+    flex: 1;
+    transition: .3s all ease;
+    align-items: center; 
+}
+
+.card:hover{
+    flex: 2;
+    background-color: rgb(207, 207, 207);
+}
+
+.txt__abt {
+    text-align: center;
+    margin-top: 90px;
+    color: #fff;
+    font-size: 25px;
+}
+
+/* *****************  FIN SOBRE MI    ************************* */
+
+/* *****************   PROJECTS TIKTOK    ************************* */
+
+
+
+
+.projects__ttk {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+ 
+.projects__ttk .card__ttk{
+    position: relative;
+    width: 550px;
+    height: 450px;
+    padding: 15px;
+    background: linear-gradient(60deg, var(--black1) 0%, var(--celeste) 100%);
+    overflow: hidden;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.projects__ttk .card__ttk h2 {
+    z-index: 99;
+    position: absolute;
+    bottom: 25px;
+    right: 130px;
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+    pointer-events: none;
+    transition: 0.2s ease;
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.projects__ttk .card__ttk p{
+    z-index: 99;
+    position: absolute;
+    bottom: 30px;
+    right: 130px;
+    width: 150px;
+    color: #fff;
+    opacity: 0;
+    font-size: 12px;
+    text-align: right;
+    letter-spacing: 1px;
+    transition: 0.2s ease;
+}
+
+.projects__ttk .card__ttk span {
+    z-index: 99;
+    position: absolute;
+    top: 60px;
+    right: 35px;
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 1px;
+    writing-mode: vertical-lr;
+    transition: 0.2s ease;
+    opacity: 0.7;
+}
+
+.projects__ttk .card__ttk .pic {
+    z-index: 100;
+    width: 480px;
+    height: 350px;
+    background-image: url(https://img.freepik.com/psd-premium/maqueta-papel-artesanal-fondo-textura-papel_676638-224.jpg?w=996);
+    background-size: cover;
+    border-radius: 12px;
+    filter: grayscale(100%);
+    transition: 0.3s ease;
+}
+
+.projects__ttk .card__ttk button {
+    position: absolute;
+    right: 30px;
+    bottom: 40px;
+    width: 30px;
+    height: 30px;
+    background-color: #c580e5;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    outline: none;
+    opacity: 1;
+    transition: 0.3s ease;
+}
+
+.projects__ttk .card__ttk:hover button {
+    transform: scale(16.5);
+    opacity: 0.5;
+}
+
+.projects__ttk .card__ttk:hover h2 {
+    bottom: 80px;
+    right: 50px;
+}
+
+.projects__ttk .card__ttk:hover p {
+    opacity: 1;
+    right: 60px;
+}
+
+.projects__ttk .card__ttk:hover span {
+    opacity: 0;
+    top: 80px;
+}
+
+.projects__ttk .card__ttk:hover .pic {
+    filter: grayscale(0);
+    width: 470px;
+}
+
+.projects__ttk .card2 .pic {
+    background-image: url(https://img.freepik.com/psd-premium/maqueta-papel-artesanal-fondo-textura-papel_676638-224.jpg?w=996);
+    transition: 0.3s ease;
+}
+
+.projects__ttk .card2 button {
+    background-color: #1a6f8b;
+}
+
+
+/* *****************  FIN PROJECTS TIKTOK    ************************* */
+
+.card__img{
+    width: 95%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+}
+
+.cards__text{
+    text-align: left;
+    width: 90%;
+    margin:0 auto;
+}
+
+.card__list{
+    color: var(--gold2);
+    font-weight: 700;
+    /* Establece márgenes en las direcciones superior, derecha, inferior e izquierda del elemento */
+margin: 25px 0 12px;
+/*
+   - 25px: Margen superior de 25 píxeles.
+   - 0: No se aplican márgenes en los lados derecho e izquierdo.
+   - 12px: Margen inferior de 12 píxeles.
+*/
+
+    font-size: 18px;
+}
+
+
+.card__title{
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.card__copy{
+    color: var(--gray2);
+    margin-bottom: 16px;
+}
+
+.card__button{
+    display: block;
+    background: linear-gradient(180deg, #F7CE90 0%, #e6b471 100%);
+    border-radius: 6px;
+    text-decoration: none;
+    width: 100%;
+    color: #a05bbc;
+    font-weight: 700;
+    text-align: center;
+    padding: 12px 0;
+}
+
+.card__date{
+    color: var(--gold2);
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.container-bg{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.background{
+    width: 68%;
+    height: 290px;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.background__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+.background__text{
+    position: absolute;
+    width: 100%;
+    bottom: 30px;
+    left: 15px;
+    color: #fff;
+}
+
+.background__title{
+    font-size: 24px;
+    margin-bottom: 4px;
+}
+
+
+
+/* ***************** FOOTER ****************** */
+.email {
+    margin-bottom: 115px;
+}
+
+.newsletter{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 40px;
+    height: auto;
+    font-family: inherit;
+    position: relative;
+    border-radius: 6px;
+}
+
+.newsletter--modifier{
+    margin: 0;
+    width: 80%;
+}
+
+.newsletter__input{
+    width: 100%;
+    height: 100%;
+    padding: 22px 10px;
+    outline: none;
+    font-family: inherit;
+    border-radius: 6px;
+    border: 1px solid var(--black1)
+}
+
+.newsletter__submit{
+    position: absolute;
+    right: 8px;
+    top: 10%;
+    height: 80%;
+    background: linear-gradient(180deg, var(--black2) 0%, var(--black1) 100%);
+    color: #fff;
+    padding: 0 15px;
+    border: none;
+    border-radius: 6px;
+    font-family: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.container--footer {
+    background-color: var(--blue-dark2);
+    border-top: 1px solid var(--black1);
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container_text--footer {
+    padding-bottom: 30px;
+    color: var(--black1);
+}e-neon
+
+.container_redes-footer a{
+    text-decoration: none;
+}
+
+.redes{
+    color: var(--black1);
+    font-size: 25px;
+    line-height: 1.5;
+    margin: 0px 4px;
+}
+
+.highlighted2 {
+    color: var(--gold2);
+}

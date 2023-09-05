@@ -1,0 +1,152 @@
+<!--Especifica que estamos trabajando un documento html -->
+<!DOCTYPE html>
+<!-- Especifica el lenguaje que trabajaremos en el docuemento -->
+<html lang="en">
+
+<!-- Especificamos las rutas de los archivos externos de nuestro proyecto web -->
+<head>
+    <!-- Especificamos que nuestro documento permita caracteres especiales -->
+    <meta charset="UTF-8">
+    <!-- Especificamos que nuestro contenido se visualice en diferentes dispositivos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Especificamos el titulo de nuestro proyecto web -->
+    <title>Joscari Ortiz</title>
+    <!-- Enlace a la hoja de estilos externa de Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
+    <!-- Enlace a la hoja de estilos css -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<!-- El body especifica el contenidode nuestro sitio web -->
+<body>
+    <header class="hero">
+        <nav class="nav__hero">
+        <!-- Navegacion del encabezado -->
+            <div class="container nav__container">
+                <div class="logo">
+                    <h2 class="logo__name">Joscari<span class="keys">{}</span>Dev<span class="point">.</span></h2>
+                </div>
+                <div class="links">
+                    <a href="#inicio" class="link">Inicio</a>
+                    <a href="#sobre_mi" class="link">Sobre mi</a>
+                    <a href="#proyectos" class="link">Proyectos</a>
+                    <a href="#contacto" class="link link--active">Contacto</a>
+                </div>
+            </div>
+        </nav>
+        <!-- Sección principal del encabezado -->
+        <section class="banner__main" id="inicio">
+            <div class="banner">
+                <div class="info animate__animated animate__zoomIn">
+                    <p>BIENVENIDO A MI PORTAFOLIO👋 SOY</p>
+                    <h1 class="name__welcome"> JOSCARI ORTIZ</h1>
+                    <h1 class="software__h1" > SOFTWARE DEVELOPER</h1>
+                    <a href="#sobre_mi">Comencemos</a>                
+                </div>
+                <div class="mockup__container animate__animated animate__zoomIn">
+                <img src="img/mockup.png" class="mockup__img">
+                </div>
+            </div>
+            
+        </section>        
+    </header>
+
+    <!-- Contenido Principal -->
+    <main>        
+<!-- ------------------- SOBRE MI ----------------- -->
+
+        <section class="services" id="sobre_mi">
+            <div class="container">
+                <h2 class="subtitle">Un poco sobre mí<span class="point">.</span></h2>
+                <p class="copy__section">Soy una desarrolladora de software orientada hacia el desarrollo backend, pero también con expereciencia en el fronted y la ciencia de datos, en camino a convertirme en una desarrolladora full-stack.</p>
+                
+                <div class="cards__abt">
+                    <div class="c_abt">
+                        <h3 class="txt__abt">Front-end</h3>
+                    </div>
+                    <div class="c_abt">
+                        <h3 class="txt__abt">Back-end</h3>
+                    </div>
+                    <div class="c_abt">
+                        <h3 class="txt__abt">Bases de datos</h3>
+                    </div>
+                    <div class="c_abt">
+                        <h3 class="txt__abt">AWS</h3>
+                    </div>
+                    <div class="c_abt">
+                        <h3 class="txt__abt">SCRUM</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- ------------------- PROYECTOS RECIENTES ----------------- -->   
+
+        <section class="projects container" id="proyectos">
+            <h2 class="subtitle">Proyectos recientes<span class="point">.</span></h2>
+            <p class="copy__section">Proyectos en los que he participado.</p>
+            <article class="container-bg">
+                <div class="projects__ttk">
+                    <div class="card__ttk">
+                        <h2>BITBASH</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <span>Front-end</span>
+                        <div class="pic"></div>
+                        <button></button>
+                    </div>
+                    <div class="card__ttk card2">
+                        <h2>SIAP</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+                        <span>Back-end</span>
+                        <div class="pic"></div>
+                        <button></button>
+                    </div>
+                </div>
+             
+        </article>
+    </section> 
+
+<!-- ------------------- FOOTER ----------------- -->
+
+        <section class="email container container--modifier">
+            <h2 class="subtitle subtitle--modifier">Si lo puedes imaginar lo puedo programar<span class="point">.</span></h2>
+
+            <p class="copy__section copy__section--modifier">Estamos a un email de distancia. Comunícate conmigo!</p>
+
+            <form class="newsletter">
+                <input type="text" class="newsletter__input" placeholder="Ingresa tu email">
+                <input type="submit" class="newsletter__submit" value="Comienza hoy">
+            </form>
+        </section>
+    </main>
+
+    <div class="container--footer" id="contacto">
+        <div class="container_redes-footer">
+            <a href="#" target="_blank">
+                <i class='bx bxl-linkedin-square redes'></i>
+            </a>
+            <a href="#" target="_blank">
+                <i class='bx bxl-github redes'></i>
+            </a>
+            <a href="#" target="_blank">
+                <i class='bx bxl-behance redes'></i>
+            </a>
+            <a href="#" target="_blank">
+                <i class='bx bxl-instagram redes' ></i>
+            </a>
+        </div>
+
+        <div class="container_text--footer">
+            <span>Copyright © 2023 | Coded with</span>
+            <span><i class='bx bxs-heart'></i></span> 
+            by <span class="highlighted2"> Joscari Ortiz</span>
+        </div>
+    </div>
+        
+    </main>
+
+</body>
+</html>
